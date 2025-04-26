@@ -1,6 +1,6 @@
 'use client';
 
-import { FaWhatsapp, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   return (
