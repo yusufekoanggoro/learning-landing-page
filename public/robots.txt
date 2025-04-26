@@ -1,3 +1,9 @@
+# *
 User-agent: *
 Allow: /
+
+# Host
+Host: https://bimbelinsankamil.vercel.app
+
+# Sitemaps
 Sitemap: https://bimbelinsankamil.vercel.app/sitemap.xml
