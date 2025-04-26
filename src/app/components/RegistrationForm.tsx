@@ -25,7 +25,7 @@ export default function RegistrationForm() {
     setIsLoading(true); // Menandakan bahwa proses sedang berlangsung
 
     const message = `Halo, saya ingin mendaftar.\n\nNama: ${name}\nNomor WhatsApp: ${whatsapp}\nProgram yang diminati: ${program}`;
-    const whatsappNumber = "6285934531182"; // Ganti dengan nomor admin kamu (62 untuk Indonesia)
+    const whatsappNumber = "6289522615724"; // Ganti dengan nomor admin kamu (62 untuk Indonesia)
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
     // Simulasi loading dan buka WhatsApp
