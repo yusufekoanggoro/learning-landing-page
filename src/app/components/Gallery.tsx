@@ -1,4 +1,11 @@
+'use client';
+
 import Image from "next/image";
+import Slider from "react-slick";
+
+// Import slick-carousel styles
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const galleryImages = [
   { src: "/images/gambar1.jpg", alt: "Kegiatan Les Siswa Belajar Matematika" },
@@ -10,32 +17,50 @@ const galleryImages = [
 ];
 
 export default function Gallery() {
-  return (
-    <section id="galeri" className="py-16 bg-gradient-to-b from-[#E3F2FD] via-[#FFEBEE] to-[#E8F5E9]">
-      <div className="text-center mb-12 px-6">
-        <h2 className="text-4xl font-bold text-[#1E3A8A]">Galeri Kami</h2>
-        <p className="text-lg text-gray-700 mt-4">
-          Lihat kegiatan seru di tempat les kami!
-        </p>
-      </div>
+  // slick settings
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
-        {galleryImages.map(({ src, alt }, index) => (
-          <div
-            key={index}
-            className="relative overflow-hidden rounded-lg shadow-lg hover:scale-105 transform transition duration-500 ease-in-out"
-          >
-            <Image
-              src={src}
-              alt={alt}
-              width={400}
-              height={300}
-              className="object-cover w-full h-full transition duration-500 ease-in-out"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black opacity-30"></div>
-          </div>
-        ))}
+  return (
+    <section id="galeri" className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#004D40]">Galeri Kami</h2>
+          <p className="text-base sm:text-lg text-gray-700 mt-4">
+            Lihat kegiatan seru di tempat les kami!
+          </p>
+        </div>
+
+        <div className="relative">
+          <Slider {...settings}>
+            {galleryImages.map(({ src, alt }, index) => (
+              <div
+                key={index}
+                className="relative overflow-hidden rounded-3xl shadow-lg"
+              >
+                <div className="relative w-full h-64 sm:h-80 md:h-96">
+                  <Image
+                    src={src}
+                    alt={alt}
+                    layout="fill"
+                    objectFit="contain" // Gunakan contain untuk mencegah gambar terpotong
+                    className="rounded-3xl transform transition-transform duration-500 ease-in-out"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-3xl"></div>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </section>
   );

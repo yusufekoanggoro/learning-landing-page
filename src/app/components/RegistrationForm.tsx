@@ -36,13 +36,23 @@ export default function RegistrationForm() {
 
   return (
     <Element name="daftar">
-      <section id="daftar" className="py-16 bg-gradient-to-b from-[#E3F2FD] via-[#FFEBEE] to-[#E8F5E9]">
-        <div className="text-center mb-12 px-6">
-          <h2 className="text-4xl font-bold text-[#1E3A8A]">Formulir Pendaftaran</h2>
-          <p className="text-lg text-gray-700 mt-4">Daftar sekarang dan mulai perjalanan belajarmu!</p>
+      <section
+        id="daftar"
+        className="py-20 bg-white relative"
+      >
+        <div className="text-center mb-16 px-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#004D40] mb-6">
+            Formulir Pendaftaran
+          </h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-2xl mx-auto font-light">
+            Daftar sekarang dan mulai perjalanan belajarmu bersama kami!
+          </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-8 bg-white rounded-3xl shadow-md hover:shadow-xl transition-all duration-300">
+        <form
+          onSubmit={handleSubmit}
+          className="max-w-lg mx-auto bg-white p-6 sm:p-8 md:p-10 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#004D40]"
+        >
           {errorMessage && (
             <div className="mb-6 p-4 text-red-700 bg-red-100 rounded-lg text-center animate-shake">
               {errorMessage}
@@ -50,7 +60,7 @@ export default function RegistrationForm() {
           )}
 
           <div className="mb-6">
-            <label htmlFor="name" className="block text-left text-gray-700 font-semibold mb-2">
+            <label htmlFor="name" className="block text-left text-[#004D40] font-semibold mb-2">
               Nama
             </label>
             <input
@@ -59,12 +69,13 @@ export default function RegistrationForm() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E3A8A]"
+              placeholder="Contoh: Yusuf"
+              className="w-full p-3 border border-[#004D40] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D40]"
             />
           </div>
 
           <div className="mb-6">
-            <label htmlFor="whatsapp" className="block text-left text-gray-700 font-semibold mb-2">
+            <label htmlFor="whatsapp" className="block text-left text-[#004D40] font-semibold mb-2">
               Nomor WhatsApp
             </label>
             <input
@@ -74,12 +85,12 @@ export default function RegistrationForm() {
               onChange={(e) => setWhatsapp(e.target.value)}
               required
               placeholder="Contoh: 081234567890"
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E3A8A]"
+              className="w-full p-3 border border-[#004D40] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D40]"
             />
           </div>
 
-          <div className="mb-6">
-            <label htmlFor="program" className="block text-left text-gray-700 font-semibold mb-2">
+          <div className="mb-8">
+            <label htmlFor="program" className="block text-left text-[#004D40] font-semibold mb-2">
               Program yang Diminati
             </label>
             <select
@@ -87,7 +98,7 @@ export default function RegistrationForm() {
               value={program}
               onChange={(e) => setProgram(e.target.value)}
               required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E3A8A]"
+              className="w-full p-3 border border-[#004D40] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D40]"
             >
               <option value="">-- Pilih Program --</option>
               <option value="Kelas Tatap Muka">Kelas Tatap Muka</option>
@@ -99,7 +110,7 @@ export default function RegistrationForm() {
           <button
             type="submit"
             disabled={isLoading}
-            className={`w-full py-3 rounded-lg font-semibold text-white transition duration-300 ${isLoading ? "bg-gray-400 cursor-not-allowed" : "bg-[#1E3A8A] hover:bg-[#005B8A]"}`}
+            className={`w-full py-3 rounded-lg font-semibold text-white transition duration-300 ${isLoading ? "bg-gray-400 cursor-not-allowed" : "bg-[#004D40] hover:bg-[#00695C]"}`}
           >
             {isLoading ? (
               <div className="spinner-border animate-spin border-4 border-t-4 border-white w-6 h-6 mx-auto" />

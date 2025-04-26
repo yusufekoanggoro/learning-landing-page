@@ -12,9 +12,21 @@ export default function Home() {
     <main>
       <HeroSection />
       <WhyChooseUs />
+      {/* <div className="my-12 w-full">
+        <hr className="border-t-2 border-[#004D40] mx-auto w-1/2" />
+      </div> */}
       <OurServices />
+      {/* <div className="my-12 w-full">
+        <hr className="border-t-2 border-[#004D40] mx-auto w-1/2" />
+      </div> */}
       <Testimonial />
+      {/* <div className="my-12 w-full">
+        <hr className="border-t-2 border-[#004D40] mx-auto w-1/2" />
+      </div> */}
       <RegistrationForm />
+      {/* <div className="my-12 w-full">
+        <hr className="border-t-2 border-[#004D40] mx-auto w-1/2" />
+      </div> */}
       <Gallery />
       <LocationMap />
       <Footer />
