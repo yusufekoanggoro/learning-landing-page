@@ -13,7 +13,7 @@ export default function LocationMap() {
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-[#004D40]">Lokasi Kami</h2>
           <p className="text-base sm:text-lg text-gray-700 mt-4">
-            Temukan kami dan datang belajar bersama! 🎒✨
+            Temukan kami dan datang belajar bersama!
           </p>
         </div>
 
