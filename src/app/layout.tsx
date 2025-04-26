@@ -20,9 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-      <title>Bimbel Insan Kamil - Belajar untuk Sukses</title>
+        <title>Bimbel Insan Kamil - Belajar untuk Sukses</title>
         <meta name="description" content="Bimbel Insan Kamil menyediakan bimbingan belajar terbaik dengan program intensif, tutor berpengalaman, dan metode belajar yang efektif untuk membantu Anda meraih kesuksesan ujian." />
-        
+        <meta name="robots" content="index, follow" />
+
         {/* Open Graph */}
         <meta property="og:title" content="Bimbel Insan Kamil - Bimbingan Belajar Terbaik untuk Ujian" />
         <meta property="og:description" content="Bergabunglah dengan Bimbingan Insan Kamil untuk persiapan ujian terbaik. Kami menyediakan bimbingan untuk semua tingkat dan berbagai mata pelajaran dengan pengajaran berkualitas." />
