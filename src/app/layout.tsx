@@ -19,15 +19,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Bimbel Insan Kamil - Bimbingan Belajar Terbaik untuk Ujian",
     description: "Bergabunglah dengan Bimbingan Insan Kamil untuk persiapan ujian terbaik. Kami menyediakan bimbingan untuk semua tingkat dan berbagai mata pelajaran dengan pengajaran berkualitas.",
-    images: "https://www.bimbelinsankamil.vercel.app/images/pamflet.jpeg",
-    url: "https://www.bimbelinsankamil.vercel.app",
+    images: "https://bimbelinsankamil.vercel.app/images/pamflet.jpeg",
+    url: "https://bimbelinsankamil.vercel.app",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Bimbel Insan Kamil - Bimbingan Belajar Terbaik untuk Ujian",
     description: "Bergabunglah dengan Bimbingan Belajar Insan Kamil untuk persiapan ujian terbaik. Kami menyediakan bimbingan untuk semua tingkat dan berbagai mata pelajaran dengan pengajaran berkualitas.",
-    images: "https://www.bimbelinsankamil.vercel.app/images/pamflet.jpeg",
+    images: "https://bimbelinsankamil.vercel.app/images/pamflet.jpeg",
   },
 };
 
