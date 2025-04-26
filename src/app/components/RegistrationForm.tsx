@@ -70,7 +70,7 @@ export default function RegistrationForm() {
               onChange={(e) => setName(e.target.value)}
               required
               placeholder="Contoh: Yusuf"
-              className="w-full p-3 border border-[#004D40] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D40] placeholder-gray-700"
+              className="w-full p-3 border border-[#004D40] rounded-lg bg-[#E0F2F1] focus:outline-none focus:ring-2 focus:ring-[#004D40] placeholder-gray-700"
             />
           </div>
 
@@ -85,7 +85,7 @@ export default function RegistrationForm() {
               onChange={(e) => setWhatsapp(e.target.value)}
               required
               placeholder="Contoh: 081234567890"
-              className="w-full p-3 border border-[#004D40] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D40] placeholder-gray-700"
+              className="w-full p-3 border border-[#004D40] rounded-lg bg-[#E0F2F1] focus:outline-none focus:ring-2 focus:ring-[#004D40] placeholder-gray-700"
             />
           </div>
 
@@ -98,7 +98,7 @@ export default function RegistrationForm() {
               value={program}
               onChange={(e) => setProgram(e.target.value)}
               required
-              className="w-full p-3 border border-[#004D40] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D40] placeholder-gray-700"
+              className="w-full p-3 border border-[#004D40] rounded-lg bg-[#E0F2F1] focus:outline-none focus:ring-2 focus:ring-[#004D40] placeholder-gray-700"
             >
               <option value="">-- Pilih Program --</option>
               <option value="Kelas Tatap Muka">Kelas Tatap Muka</option>
