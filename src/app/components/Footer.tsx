@@ -1,6 +1,6 @@
 'use client';
 
-import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { FaWhatsapp, FaEnvelope, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -44,6 +44,21 @@ export default function Footer() {
               </div>
               <span className="absolute left-1/2 transform -translate-x-1/2 mt-2 text-xs text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Email
+              </span>
+            </a>
+
+            {/* Icon Instagram */}
+            <a
+              href="https://www.instagram.com/your_instagram_handle"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative"
+            >
+              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-white shadow-lg hover:bg-pink-100 transition-colors duration-300">
+                <FaInstagram className="text-pink-500 text-2xl" />
+              </div>
+              <span className="absolute left-1/2 transform -translate-x-1/2 mt-2 text-xs text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Instagram
               </span>
             </a>
           </div>
