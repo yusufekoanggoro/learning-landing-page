@@ -24,6 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Bimbel Pintar - Belajar Jadi Juara!</title>
+        <meta name="description" content="Bimbel Pintar siap membantu kamu lulus ujian dengan nilai terbaik! Program intensif, tutor berpengalaman, dan metode belajar efektif." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://bimbelpintar.vercel.app/" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
