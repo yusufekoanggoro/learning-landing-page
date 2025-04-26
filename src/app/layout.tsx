@@ -13,24 +13,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Bimbel Insan Kamil - Belajar untuk Sukses",
-  description: "Bimbel Insan Kamil menyediakan bimbingan belajar terbaik dengan program intensif, tutor berpengalaman, dan metode belajar yang efektif untuk membantu Anda meraih kesuksesan ujian.",
-  openGraph: {
-    title: "Bimbel Insan Kamil - Bimbingan Belajar Terbaik untuk Ujian",
-    description: "Bergabunglah dengan Bimbingan Insan Kamil untuk persiapan ujian terbaik. Kami menyediakan bimbingan untuk semua tingkat dan berbagai mata pelajaran dengan pengajaran berkualitas.",
-    images: "https://bimbelinsankamil.vercel.app/images/pamflet.jpeg",
-    url: "https://bimbelinsankamil.vercel.app",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Bimbel Insan Kamil - Bimbingan Belajar Terbaik untuk Ujian",
-    description: "Bergabunglah dengan Bimbingan Belajar Insan Kamil untuk persiapan ujian terbaik. Kami menyediakan bimbingan untuk semua tingkat dan berbagai mata pelajaran dengan pengajaran berkualitas.",
-    images: "https://bimbelinsankamil.vercel.app/images/pamflet.jpeg",
-  },
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -39,6 +21,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
+      <title>Bimbel Insan Kamil - Belajar untuk Sukses</title>
+        <meta name="description" content="Bimbel Insan Kamil menyediakan bimbingan belajar terbaik dengan program intensif, tutor berpengalaman, dan metode belajar yang efektif untuk membantu Anda meraih kesuksesan ujian." />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Bimbel Insan Kamil - Bimbingan Belajar Terbaik untuk Ujian" />
+        <meta property="og:description" content="Bergabunglah dengan Bimbingan Insan Kamil untuk persiapan ujian terbaik. Kami menyediakan bimbingan untuk semua tingkat dan berbagai mata pelajaran dengan pengajaran berkualitas." />
+        <meta property="og:image" content="https://bimbelinsankamil.vercel.app/images/pamflet.jpeg" />
+        <meta property="og:url" content="https://bimbelinsankamil.vercel.app" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Bimbel Insan Kamil - Bimbingan Belajar Terbaik untuk Ujian" />
+        <meta name="twitter:description" content="Bergabunglah dengan Bimbingan Belajar Insan Kamil untuk persiapan ujian terbaik. Kami menyediakan bimbingan untuk semua tingkat dan berbagai mata pelajaran dengan pengajaran berkualitas." />
+        <meta name="twitter:image" content="https://bimbelinsankamil.vercel.app/images/pamflet.jpeg" />
+
         <link rel="canonical" href="https://bimbelinsankamil.vercel.app" />
       </Head>
       <body
