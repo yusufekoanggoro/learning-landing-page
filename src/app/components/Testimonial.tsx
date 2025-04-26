@@ -49,7 +49,7 @@ export default function Testimonial() {
                                     className="w-20 h-20 rounded-full mx-auto object-cover shadow-sm border-2 border-[#004D40]"
                                 />
                             </div>
-                            <p className="text-gray-600 mb-6 italic">"{testimonial.message}"</p>
+                            <p className="text-gray-600 mb-6 italic">{testimonial.message}</p>
                             <h4 className="font-semibold text-lg text-[#004D40]">
                                 - {testimonial.name}
                             </h4>
