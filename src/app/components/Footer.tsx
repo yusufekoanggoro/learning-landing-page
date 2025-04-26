@@ -2,20 +2,20 @@ import { FaWhatsapp } from "react-icons/fa"; // Import ikon WhatsApp dari react-
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-[#E3F2FD] to-[#FFEBEE] border-t border-gray-200 py-6">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-6 md:space-y-0">
+    <footer className="bg-gradient-to-b from-[#E3F2FD] to-[#FFEBEE] border-t border-gray-200 py-16">
+      <div className="container mx-auto px-6 text-center md:text-left flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         {/* Informasi Tempat Les */}
         <div className="space-y-4">
-          <h4 className="text-xl font-semibold text-[#0077B6]">Tempat Les Belajar</h4>
-          <p className="text-gray-600 text-sm">Membantu siswa meraih prestasi terbaik.</p>
+          <h4 className="text-2xl font-bold text-[#1E3A8A]">Tempat Les Belajar</h4>
+          <p className="text-gray-700 text-lg">Membantu siswa meraih prestasi terbaik.</p>
         </div>
 
         {/* Alamat, Nomor WA dan Email */}
         <div className="space-y-4">
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-700 text-lg">
             <strong>Alamat:</strong> Jl. Merdeka No. 10, Jakarta
           </p>
-          <p className="flex items-center text-gray-600 text-sm">
+          <p className="flex items-center text-gray-700 text-lg">
             <FaWhatsapp className="text-green-500 mr-2" />
             <a
               href="https://wa.me/6281234567890"
@@ -27,13 +27,13 @@ export default function Footer() {
               0812-3456-7890
             </a>
           </p>
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-700 text-lg">
             <strong>Email:</strong> info@tempatles.com
           </p>
         </div>
 
         {/* Copyright */}
-        <div className="text-sm text-gray-600 mt-4 md:mt-0">
+        <div className="text-sm text-gray-700 mt-4 md:mt-0">
           &copy; {new Date().getFullYear()} Tempat Les Belajar. All rights reserved.
         </div>
       </div>
