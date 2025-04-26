@@ -13,7 +13,7 @@ export default function HeroSection() {
         {/* Text Content */}
         <div className="text-center md:text-left flex-1 animate-fadeIn">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-[#00796B] mb-6 font-sans">
-            Bimbingan <span className="text-[#004D40]">Anak Ceria</span>
+            Bimbel <span className="text-[#004D40]">Insan Kamil</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-700 mb-8">
             Dukung tumbuh kembang anak dengan <span className="font-semibold text-[#FF7043]">bimbingan yang menyenangkan</span>, <span className="font-semibold text-[#FF7043]">interaktif</span>, dan <span className="font-semibold text-[#FF7043]">mendalam</span>.
@@ -40,7 +40,7 @@ export default function HeroSection() {
         {/* Ilustrasi / Gambar */}
         <div className="flex-1 hidden md:block">
           <img
-            src="/images/kid-education-illustration-design-vector.jpg"
+            src="/images/kid-education-illustration-design-vector.png"
             alt="Bimbingan Belajar Anak"
             className="w-full max-w-md mx-auto animate-fadeInUp"
           />
@@ -48,7 +48,7 @@ export default function HeroSection() {
       </div>
 
       {/* Scroll Down Icon */}
-      <div className="absolute bottom-6 sm:bottom-10 md:bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute sm:bottom-12 md:bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
         <Link to="mengapa-pilih-kami" smooth={true} duration={800}>
           <svg
             className="w-8 h-8 text-[#004D40]"
@@ -56,7 +56,7 @@ export default function HeroSection() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth="2"
+            strokeWidth="3"
             strokeLinecap="round"
             strokeLinejoin="round"
           >

@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-8 md:space-y-0">
           {/* Info Bimbel */}
           <div className="space-y-4">
-            <h4 className="text-2xl sm:text-3xl font-bold text-[#004D40]">Bimbel Belajar</h4>
+            <h4 className="text-2xl sm:text-3xl font-bold text-[#004D40]">Bimbel Insan Kamil</h4>
             <p className="text-lg sm:text-xl text-gray-700">
               Menyediakan fasilitas terbaik untuk membantu siswa meraih prestasi gemilang.
             </p>
@@ -40,7 +40,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-12 text-center text-sm sm:text-base text-gray-600">
-          &copy; {new Date().getFullYear()} Bimbel Belajar. Semua hak cipta dilindungi.
+          &copy; {new Date().getFullYear()} Bimbel Insan Kamil. Semua hak cipta dilindungi.
         </div>
       </div>
     </footer>
