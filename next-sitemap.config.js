@@ -1,4 +1,4 @@
 module.exports = {
-    siteUrl: 'https://bimbelpintar.vercel.app/',
+    siteUrl: 'https://bimbelinsankamil.vercel.app',
     generateRobotsTxt: true,
 }

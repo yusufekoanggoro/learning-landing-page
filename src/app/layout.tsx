@@ -25,10 +25,27 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Bimbel Pintar - Belajar Jadi Juara!</title>
-        <meta name="description" content="Bimbel Pintar siap membantu kamu lulus ujian dengan nilai terbaik! Program intensif, tutor berpengalaman, dan metode belajar efektif." />
+        <title>Bimbel Insan Kamil - Belajar untuk Sukses</title>
+        <meta name="description" content="Bimbel Insan Kamil menyediakan bimbingan belajar terbaik dengan program intensif, tutor berpengalaman, dan metode belajar yang efektif untuk membantu Anda meraih kesuksesan ujian." />        
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://bimbelpintar.vercel.app/" />
+        <meta name="keywords" content="bimbingan belajar, ujian, persiapan ujian, les privat, matematika, bahasa Inggris, persiapan SNMPTN, ujian sekolah, bimbingan Insan Kamil, belajar efektif" />
+
+        {/* Open Graph untuk sosial media */}
+        <meta property="og:title" content="Bimbel Insan Kamil - Bimbingan Belajar Terbaik untuk Ujian" />
+        <meta property="og:description" content="Bergabunglah dengan Bimbingan Insan Kamil untuk persiapan ujian terbaik. Kami menyediakan bimbingan untuk semua tingkat dan berbagai mata pelajaran dengan pengajaran berkualitas." />
+        <meta property="og:image" content="https://www.bimbelinsankamil.vercel.app/images/pamflet.jpeg" />
+        <meta property="og:url" content="https://www.bimbelinsankamil.vercel.app" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card untuk Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Bimbel Insan Kamil - Bimbingan Belajar Terbaik untuk Ujian" />
+        <meta name="twitter:description" content="Bergabunglah dengan Bimbingan Belajar Insan Kamil untuk persiapan ujian terbaik. Kami menyediakan bimbingan untuk semua tingkat dan berbagai mata pelajaran dengan pengajaran berkualitas." />
+        <meta name="twitter:image" content="https://www.bimbelinsankamil.vercel.app/images/pamflet.jpeg" />
+
+
+        <link rel="canonical" href="https://bimbelinsankamil.vercel.app" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
