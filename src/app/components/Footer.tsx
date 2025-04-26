@@ -19,15 +19,6 @@ export default function Footer() {
 
           {/* Kontak Icon dalam Circle */}
           <div className="flex space-x-6 justify-center md:justify-start mt-6 md:mt-0">
-            <div className="group relative">
-              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-white shadow-lg hover:bg-green-100 transition-colors duration-300 cursor-pointer">
-                <FaMapMarkerAlt className="text-[#004D40] text-2xl" />
-              </div>
-              <span className="absolute left-1/2 transform -translate-x-1/2 mt-2 text-xs text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Alamat
-              </span>
-            </div>
-
             <a
               href="https://wa.me/6281234567890"
               target="_blank"

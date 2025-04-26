@@ -20,7 +20,7 @@ export default function LocationMap() {
         <div className="flex justify-center">
           <div className="w-full sm:w-11/12 md:w-10/12 lg:w-8/12 xl:w-7/12 rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border-4 border-white">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.849716616447!2d-122.08424928468962!3d37.42199977982578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0b4b22c4f8d%3A0x444cb5c1b56a8ec8!2sGoogleplex!5e0!3m2!1sen!2sus!4v1614214861576!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63462.42876695347!2d106.77432857004322!3d-6.210619277235301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x2e69f6aa0ce995f9%3A0xed935b94a739c157!2sJl.%20K.H.%20Mas%20Mansyur%20No.Kav.%20126%2C%20Karet%20Tengsin%2C%20Kecamatan%20Tanah%20Abang%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2010250!3m2!1d-6.2107062!2d106.8155286!5e0!3m2!1sen!2sid!4v1745689073225!5m2!1sen!2sid"
               width="100%"
               height="450"
               allowFullScreen
