@@ -98,7 +98,7 @@ export default function RegistrationForm() {
               value={program}
               onChange={(e) => setProgram(e.target.value)}
               required
-              className="w-full p-3 border border-[#004D40] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D40]"
+              className="w-full p-3 border border-[#004D40] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D40] placeholder-gray-700"
             >
               <option value="">-- Pilih Program --</option>
               <option value="Kelas Tatap Muka">Kelas Tatap Muka</option>
