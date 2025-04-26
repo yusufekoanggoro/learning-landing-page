@@ -1,45 +1,65 @@
 'use client';
 
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-200 py-16">
+    <footer className="bg-[#F9FAFB] border-t border-gray-300 py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-8 md:space-y-0">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-12">
           {/* Info Bimbel */}
-          <div className="space-y-4">
-            <h4 className="text-2xl sm:text-3xl font-bold text-[#004D40]">Bimbel Insan Kamil</h4>
-            <p className="text-lg sm:text-xl text-gray-700">
+          <div className="space-y-4 text-center md:text-left">
+            <h4 className="text-3xl font-extrabold text-[#004D40]">
+              Bimbel Insan Kamil
+            </h4>
+            <p className="text-lg sm:text-xl text-gray-700 max-w-md mx-auto md:mx-0">
               Menyediakan fasilitas terbaik untuk membantu siswa meraih prestasi gemilang.
             </p>
           </div>
 
-          {/* Kontak */}
-          <div className="space-y-4">
-            <p className="text-lg sm:text-xl text-gray-700">
-              <strong>Alamat:</strong> Jl. Merdeka No. 10, Jakarta
-            </p>
-            <p className="flex items-center justify-center md:justify-start text-lg sm:text-xl text-gray-700">
-              <FaWhatsapp className="text-green-500 mr-2" />
-              <a
-                href="https://wa.me/6281234567890"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-green-600 transition-colors duration-200"
-                aria-label="Hubungi melalui WhatsApp"
-              >
-                0812-3456-7890
-              </a>
-            </p>
-            <p className="text-lg sm:text-xl text-gray-700">
-              <strong>Email:</strong> info@bimbel.com
-            </p>
+          {/* Kontak Icon dalam Circle */}
+          <div className="flex space-x-6 justify-center md:justify-start mt-6 md:mt-0">
+            <div className="group relative">
+              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-white shadow-lg hover:bg-green-100 transition-colors duration-300 cursor-pointer">
+                <FaMapMarkerAlt className="text-[#004D40] text-2xl" />
+              </div>
+              <span className="absolute left-1/2 transform -translate-x-1/2 mt-2 text-xs text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Alamat
+              </span>
+            </div>
+
+            <a
+              href="https://wa.me/6281234567890"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative"
+            >
+              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-white shadow-lg hover:bg-green-100 transition-colors duration-300">
+                <FaWhatsapp className="text-green-500 text-2xl" />
+              </div>
+              <span className="absolute left-1/2 transform -translate-x-1/2 mt-2 text-xs text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                WhatsApp
+              </span>
+            </a>
+
+            <a
+              href="mailto:info@bimbel.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative"
+            >
+              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-white shadow-lg hover:bg-green-100 transition-colors duration-300">
+                <FaEnvelope className="text-[#004D40] text-2xl" />
+              </div>
+              <span className="absolute left-1/2 transform -translate-x-1/2 mt-2 text-xs text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Email
+              </span>
+            </a>
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="mt-12 text-center text-sm sm:text-base text-gray-600">
+        {/* Garis pemisah */}
+        <div className="border-t border-gray-300 mt-12 pt-6 text-center text-sm sm:text-base text-gray-600">
           &copy; {new Date().getFullYear()} Bimbel Insan Kamil. Semua hak cipta dilindungi.
         </div>
       </div>

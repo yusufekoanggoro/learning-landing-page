@@ -38,20 +38,20 @@ export default function RegistrationForm() {
     <Element name="daftar">
       <section
         id="daftar"
-        className="py-20 bg-white relative"
+        className="py-20 bg-gradient-to-r from-[#004D40] to-[#00796B] relative"
       >
-        <div className="text-center mb-16 px-6">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#004D40] mb-6">
+        <div className="text-center mb-16 px-6 z-10 max-w-5xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6">
             Formulir Pendaftaran
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-2xl mx-auto font-light">
+          <p className="text-base sm:text-lg md:text-xl text-white max-w-2xl mx-auto font-light">
             Daftar sekarang dan mulai perjalanan belajarmu bersama kami!
           </p>
         </div>
 
         <form
           onSubmit={handleSubmit}
-          className="max-w-lg mx-auto bg-white p-6 sm:p-8 md:p-10 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#004D40]"
+          className="max-w-lg mx-auto bg-white p-6 sm:p-8 md:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-[#004D40]"
         >
           {errorMessage && (
             <div className="mb-6 p-4 text-red-700 bg-red-100 rounded-lg text-center animate-shake">
@@ -70,7 +70,7 @@ export default function RegistrationForm() {
               onChange={(e) => setName(e.target.value)}
               required
               placeholder="Contoh: Yusuf"
-              className="w-full p-3 border border-[#004D40] rounded-lg bg-[#E0F2F1] focus:outline-none focus:ring-2 focus:ring-[#004D40] placeholder-gray-700 text-[#004D40]"
+              className="w-full p-3 border border-[#004D40] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D40] placeholder-gray-700 text-[#004D40] transition-all duration-300"
             />
           </div>
 
@@ -82,10 +82,19 @@ export default function RegistrationForm() {
               id="whatsapp"
               type="tel"
               value={whatsapp}
-              onChange={(e) => setWhatsapp(e.target.value)}
+              onChange={(e) => {
+                const value = e.target.value;
+                setWhatsapp(value);
+
+                if (/^[0-9]{12,13}$/.test(value)) {
+                  setErrorMessage(""); 
+                } else {
+                  setErrorMessage("Nomor WhatsApp tidak valid. Pastikan terdiri dari 12-13 digit.");
+                }
+              }}
               required
               placeholder="Contoh: 081234567890"
-              className="w-full p-3 border border-[#004D40] rounded-lg bg-[#E0F2F1] focus:outline-none focus:ring-2 focus:ring-[#004D40] placeholder-gray-700 text-[#004D40]"
+              className="w-full p-3 border border-[#004D40] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D40] placeholder-gray-700 text-[#004D40] transition-all duration-300"
             />
           </div>
 
@@ -98,7 +107,7 @@ export default function RegistrationForm() {
               value={program}
               onChange={(e) => setProgram(e.target.value)}
               required
-              className="w-full p-3 border border-[#004D40] rounded-lg bg-[#E0F2F1] focus:outline-none focus:ring-2 focus:ring-[#004D40] placeholder-gray-700 text-[#004D40]"
+              className="w-full p-3 border border-[#004D40] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D40] placeholder-gray-700 text-[#004D40] transition-all duration-300"
             >
               <option value="">-- Pilih Program --</option>
               <option value="Kelas Tatap Muka">Kelas Tatap Muka</option>
@@ -109,8 +118,10 @@ export default function RegistrationForm() {
 
           <button
             type="submit"
-            disabled={isLoading}
-            className={`w-full py-3 rounded-lg font-semibold text-white transition duration-300 ${isLoading ? "bg-gray-400 cursor-not-allowed" : "bg-[#004D40] hover:bg-[#00695C]"}`}
+            disabled={isLoading || errorMessage !== ""}
+            className={`w-full py-3 rounded-lg font-semibold text-white transition duration-300 ${
+              isLoading || errorMessage !== "" ? "bg-gray-400 cursor-not-allowed" : "bg-[#004D40] hover:bg-[#00695C] focus:ring-4 focus:ring-[#004D40]"
+            }`}
           >
             {isLoading ? (
               <div className="spinner-border animate-spin border-4 border-t-4 border-white w-6 h-6 mx-auto" />
