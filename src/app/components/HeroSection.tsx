@@ -48,7 +48,7 @@ export default function HeroSection() {
       </div>
 
       {/* Scroll Down Icon */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-6 sm:bottom-10 md:bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
         <Link to="mengapa-pilih-kami" smooth={true} duration={800}>
           <svg
             className="w-8 h-8 text-[#004D40]"
