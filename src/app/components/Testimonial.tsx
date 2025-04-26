@@ -47,7 +47,7 @@ export default function Testimonial() {
               />
             </div>
             <p className="text-gray-600 mb-6 italic leading-relaxed text-sm sm:text-base">
-              "{testimonial.message}"
+              {testimonial.message}
             </p>
             <h4 className="font-semibold text-lg text-[#004D40]">
               {testimonial.name}
