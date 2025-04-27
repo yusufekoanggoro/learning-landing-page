@@ -3,6 +3,10 @@
 import { FaWhatsapp, FaEnvelope, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
+  const whatsappNumber = process.env.NEXT_APP_WHATSAPP_NUMBER;
+  const email = process.env.NEXT_APP_EMAIL;
+  const instagram = process.env.NEXT_APP_INSTAGRAM;
+
   return (
     <footer className="bg-[#F9FAFB] border-t border-gray-300 py-16">
       <div className="max-w-7xl mx-auto px-6">
@@ -20,7 +24,7 @@ export default function Footer() {
           {/* Kontak Icon dalam Circle */}
           <div className="flex space-x-6 justify-center md:justify-start mt-6 md:mt-0">
             <a
-              href="https://wa.me/6281234567890"
+              href={`https://wa.me/${whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
               className="group relative"
@@ -34,7 +38,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="mailto:info@bimbel.com"
+              href={`mailto:${email}`}
               target="_blank"
               rel="noopener noreferrer"
               className="group relative"
@@ -49,7 +53,7 @@ export default function Footer() {
 
             {/* Icon Instagram */}
             <a
-              href="https://www.instagram.com/your_instagram_handle"
+              href={`https://www.instagram.com/${instagram}`}
               target="_blank"
               rel="noopener noreferrer"
               className="group relative"

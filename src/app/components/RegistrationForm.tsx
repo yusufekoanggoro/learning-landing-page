@@ -9,6 +9,7 @@ export default function RegistrationForm() {
   const [program, setProgram] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const whatsappNumber = process.env.NEXT_APP_WHATSAPP_NUMBER;
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -22,8 +23,7 @@ export default function RegistrationForm() {
     setIsLoading(true);
 
     const message = `Halo, saya ingin mendaftar.\n\nNama: ${name}\nNomor WhatsApp: ${whatsapp}\nProgram: ${program}`;
-    const adminNumber = "6289522615724";
-    const url = `https://wa.me/${adminNumber}?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
     setTimeout(() => {
       window.open(url, "_blank");

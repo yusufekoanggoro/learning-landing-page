@@ -3,6 +3,8 @@
 import { Link } from 'react-scroll';
 
 export default function HeroSection() {
+  const whatsappNumber = process.env.NEXT_APP_WHATSAPP_NUMBER;
+
   return (
     <section className="min-h-screen bg-gradient-to-br from-[#E0F7FA] via-[#E8F5E9] to-[#FFFDE7] flex items-center justify-center text-gray-800 overflow-hidden relative">
       {/* Background Decoration */}
@@ -29,7 +31,8 @@ export default function HeroSection() {
               Daftar Sekarang
             </Link>
             <a
-              href="#konsultasi"
+              href={`https://wa.me/${whatsappNumber}?text=Halo,%20saya%20ingin%20konsultasi%20gratis%20tentang%20bimbingan%20belajar`}
+              target="_blank"
               className="border-2 border-[#004D40] text-[#004D40] py-4 px-10 rounded-full font-semibold text-lg shadow-xl hover:bg-[#004D40] hover:text-white transition-transform transform hover:scale-105"
             >
               Konsultasi Gratis
