@@ -110,9 +110,8 @@ export default function RegistrationForm() {
               className="w-full p-3 border border-[#004D40] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#004D40] placeholder-gray-700 text-[#004D40] transition-all duration-300"
             >
               <option value="">-- Pilih Program --</option>
-              <option value="Kelas Tatap Muka">Kelas Tatap Muka</option>
-              <option value="Kelas Online">Kelas Online</option>
-              <option value="Private Coaching">Private Coaching</option>
+              <option value="Kelas Tatap Muka">Belajar Privat</option>
+              <option value="Kelas Online">Belajar Kelompok</option>
             </select>
           </div>
 
