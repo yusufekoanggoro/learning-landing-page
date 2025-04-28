@@ -8,12 +8,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const galleryImages = [
-  { src: "/images/gambar1.jpg", alt: "Kegiatan Les Siswa Belajar Matematika" },
-  { src: "/images/gambar1.jpg", alt: "Kegiatan Les Menggambar" },
-  { src: "/images/gambar1.jpg", alt: "Kegiatan Les Diskusi Kelompok" },
-  { src: "/images/gambar1.jpg", alt: "Kegiatan Les Membaca Buku" },
-  { src: "/images/gambar1.jpg", alt: "Kegiatan Les Menggunakan Alat Peraga" },
-  { src: "/images/gambar1.jpg", alt: "Kegiatan Les Siswa Berdiskusi" },
+  { src: "/images/aktivitas-1.jpg", alt: "Kegiatan belajar kelompok di tempat bimbingan belajar." },
+  { src: "/images/aktivitas-2.jpg", alt: "Siswa-siswi sedang belajar bersama di kelas bimbingan belajar." },
+  { src: "/images/aktivitas-3.jpg", alt: "Suasana kelas bimbel dengan siswa yang fokus mengerjakan soal." },
+  { src: "/images/aktivitas-4.jpg", alt: "Anak-anak antusias mengikuti sesi bimbel di ruang kelas." },
+  { src: "/images/aktivitas-5.jpg", alt: "Anak-anak sedang berlatih gerakan sholat berjamaah di kelas." },
+  { src: "/images/aktivitas-6.jpg", alt: "Anak-anak tersenyum bahagia saat menerima hadiah dari guru." },
+  { src: "/images/aktivitas-7.jpg", alt: "Siswa-siswi dan guru berfoto bersama setelah acara bimbel selesai." },
 ];
 
 export default function Gallery() {
@@ -51,7 +52,8 @@ export default function Gallery() {
                     src={src}
                     alt={alt}
                     layout="fill"
-                    objectFit="cover"
+                    // objectFit="cover"
+                    objectFit="contain" // Menjaga gambar tidak terpotong
                     className="rounded-3xl transition-all duration-300 ease-in-out"
                     loading="lazy"
                   />
