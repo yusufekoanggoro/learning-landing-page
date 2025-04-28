@@ -39,13 +39,13 @@ export default function Testimonial() {
             key={index}
             className="bg-white rounded-3xl shadow-xl p-8 sm:p-10 text-center hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full sm:w-80 md:w-72 lg:w-64"
           >
-            <div className="mb-6">
+            {/* <div className="mb-6">
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
                 className="w-20 h-20 rounded-full mx-auto object-cover shadow-lg border-4 border-[#004D40]"
               />
-            </div>
+            </div> */}
             <p className="text-gray-600 mb-6 italic leading-relaxed text-sm sm:text-base">
               {testimonial.message}
             </p>
