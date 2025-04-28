@@ -3,8 +3,8 @@
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
-  const whatsappNumber = process.env.NEXT_APP_WHATSAPP_NUMBER;
-  const email = process.env.NEXT_APP_EMAIL;
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+  const email = process.env.NEXT_PUBLIC_EMAIL;
   // const instagram = process.env.NEXT_APP_INSTAGRAM;
 
   return (
