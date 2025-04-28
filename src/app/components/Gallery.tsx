@@ -39,7 +39,7 @@ export default function Gallery() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-extrabold text-[#004D40] tracking-tight">Galeri Kami</h2>
           <p className="text-lg text-gray-700 mt-4">
-            Lihat kegiatan seru di tempat les kami!
+            Lihat kegiatan seru di tempat bimbel kami!
           </p>
         </div>
 

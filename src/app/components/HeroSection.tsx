@@ -3,7 +3,7 @@
 import { Link } from 'react-scroll';
 
 export default function HeroSection() {
-  const whatsappNumber = process.env.NEXT_APP_WHATSAPP_NUMBER;
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
 
   return (
     <section className="min-h-screen bg-gradient-to-br from-[#E0F7FA] via-[#E8F5E9] to-[#FFFDE7] flex items-center justify-center text-gray-800 overflow-hidden relative">
