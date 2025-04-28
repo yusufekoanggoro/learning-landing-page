@@ -1,11 +1,11 @@
 'use client';
 
-import { FaWhatsapp, FaEnvelope, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   const whatsappNumber = process.env.NEXT_APP_WHATSAPP_NUMBER;
   const email = process.env.NEXT_APP_EMAIL;
-  const instagram = process.env.NEXT_APP_INSTAGRAM;
+  // const instagram = process.env.NEXT_APP_INSTAGRAM;
 
   return (
     <footer className="bg-[#F9FAFB] border-t border-gray-300 py-16">
