@@ -27,7 +27,7 @@ export default function Gallery() {
     arrows: true,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2500,
     pauseOnHover: true, // Pause autoplay on hover
     // nextArrow: <button className="slick-next text-white bg-[#004D40] hover:bg-[#003b2e] p-3 rounded-full shadow-lg transition-all duration-200 ease-in-out">→</button>, // Custom right arrow
     // prevArrow: <button className="slick-prev text-white bg-[#004D40] hover:bg-[#003b2e] p-3 rounded-full shadow-lg transition-all duration-200 ease-in-out">←</button>, // Custom left arrow
