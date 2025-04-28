@@ -52,7 +52,7 @@ export default function Footer() {
             </a>
 
             {/* Icon Instagram */}
-            <a
+            {/* <a
               href={`https://www.instagram.com/${instagram}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -64,7 +64,7 @@ export default function Footer() {
               <span className="absolute left-1/2 transform -translate-x-1/2 mt-2 text-xs text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Instagram
               </span>
-            </a>
+            </a> */}
           </div>
         </div>
 
